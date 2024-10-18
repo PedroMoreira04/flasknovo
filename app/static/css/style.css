@@ -1,0 +1,42 @@
+body {
+    background-color: gray ;
+    margin: 0;
+}
+
+header{
+    width: 100% ;
+    position: fixed;
+}
+
+.logo{
+    max-width: 125px;
+    height: 100px;
+    width: 100px;
+
+}
+
+nav {
+    background-color: #e28f2e;
+    font-size: 19px;
+    height: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    margin-left: 15px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 3.15 ;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+<div class="container mt-5">
+    <form action="cadastrarUsuario" method="POST">
+
+        <h2 class="fjalla-one-regular">CADASTRO</h2>
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </div>
+        <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+        </div>
+        <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+    </form>
+    <div class="mt-4">
+        <a href="/listar" class="btn btn-warning btn-block">Consultar Tudo</a>
+        <a href="/listarIndividual" class="btn btn-warning btn-block">Consultar Individual</a>
+        <a href="/atualizar" class="btn btn-warning btn-block">Atualizar</a>
+        <a href="/excluir" class="btn btn-danger btn-block">Excluir</a>
+    </div>
+</div>
+
+
+{% endblock %}

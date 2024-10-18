@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="container mt-5">
+    <h2 class="text-center">Lista de Contatos</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CPF</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contato in contatos %}
+            <tr>
+                <td>{{ contato.id }}</td>
+                <td>{{ contato.cpf }}</td>
+                <td>{{ contato.nome }}</td>
+                <td>{{ contato.telefone }}</td>
+                <td>{{ contato.endereco }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/cadastro" class="btn btn-primary mt-3">Cadastrar Novo Contato</a>
+</div>
+{% endblock %}
